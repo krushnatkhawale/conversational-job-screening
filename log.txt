@@ -1,0 +1,198 @@
+####################################################################################################
+ai: Hi there John! I am Dasha from Capgemini pvt ltd. We are currently hiring people for various profiles and I am looking forward for knowing about you, are you okay for some questions? 
+[
+  {
+    "type": "Intent",
+    "skill": "sentiment",
+    "weight": -1,
+    "likelihood": -1,
+    "location": {
+      "start": 0,
+      "end": 0
+    },
+    "intent": null,
+    "state": "positive",
+    "sentenceType": "statement"
+  },
+  {
+    "type": "Intent",
+    "skill": "686c47ec7b6fdc2d36c824d690c0601c:v2",
+    "weight": 0.99879,
+    "likelihood": 1,
+    "location": {
+      "start": -1,
+      "end": -1
+    },
+    "intent": "yes",
+    "state": "positive",
+    "sentenceType": "statement"
+  }
+]
+human: yes
+ai: Perfect, thank you. First question - What is the role are you looking for?
+[
+  {
+    "type": "Data",
+    "skill": "686c47ec7b6fdc2d36c824d690c0601c:v2",
+    "weight": 0.34359,
+    "likelihood": 1,
+    "location": {
+      "start": 0,
+      "end": 9
+    },
+    "factType": "designation",
+    "data": {
+      "value": "software developer"
+    }
+  },
+  {
+    "type": "Intent",
+    "skill": "sentiment",
+    "weight": -1,
+    "likelihood": -1,
+    "location": {
+      "start": 0,
+      "end": 0
+    },
+    "intent": null,
+    "state": "neutral",
+    "sentenceType": "statement"
+  }
+]
+human: developer
+ai: Perfect. Second question - How much experience do you have?
+[
+  {
+    "type": "Data",
+    "skill": "common-numbers",
+    "weight": -1,
+    "likelihood": -1,
+    "location": {
+      "start": 0,
+      "end": 0
+    },
+    "factType": "numberword",
+    "data": {
+      "value": "12"
+    }
+  },
+  {
+    "type": "Data",
+    "skill": "686c47ec7b6fdc2d36c824d690c0601c:v2",
+    "weight": 0.79743,
+    "likelihood": 1,
+    "location": {
+      "start": 0,
+      "end": 2
+    },
+    "factType": "experience",
+    "data": {
+      "value": "12"
+    }
+  },
+  {
+    "type": "Intent",
+    "skill": "sentiment",
+    "weight": -1,
+    "likelihood": -1,
+    "location": {
+      "start": 0,
+      "end": 0
+    },
+    "intent": null,
+    "state": "neutral",
+    "sentenceType": "statement"
+  }
+]
+human: 12
+ai: Okay. Third question is, What type of employment are you looking for? Examples are, full time, part time
+[
+  {
+    "type": "Data",
+    "skill": "686c47ec7b6fdc2d36c824d690c0601c:v2",
+    "weight": 0.96974,
+    "likelihood": 1,
+    "location": {
+      "start": 0,
+      "end": 9
+    },
+    "factType": "employment_type",
+    "data": {
+      "value": "full time"
+    }
+  },
+  {
+    "type": "Intent",
+    "skill": "sentiment",
+    "weight": -1,
+    "likelihood": -1,
+    "location": {
+      "start": 0,
+      "end": 1
+    },
+    "intent": null,
+    "state": "neutral",
+    "sentenceType": "statement"
+  }
+]
+human: full time
+ai: I see. Next question is, What are your key skills?
+[
+  {
+    "type": "Data",
+    "skill": "686c47ec7b6fdc2d36c824d690c0601c:v2",
+    "weight": 0.9996,
+    "likelihood": 1,
+    "location": {
+      "start": 0,
+      "end": 4
+    },
+    "factType": "key_skills",
+    "data": {
+      "value": "java"
+    }
+  },
+  {
+    "type": "Data",
+    "skill": "686c47ec7b6fdc2d36c824d690c0601c:v2",
+    "weight": 0.99995,
+    "likelihood": 1,
+    "location": {
+      "start": 5,
+      "end": 6
+    },
+    "factType": "key_skills",
+    "data": {
+      "value": "c"
+    }
+  },
+  {
+    "type": "Data",
+    "skill": "686c47ec7b6fdc2d36c824d690c0601c:v2",
+    "weight": 0.97164,
+    "likelihood": 1,
+    "location": {
+      "start": 7,
+      "end": 10
+    },
+    "factType": "key_skills",
+    "data": {
+      "value": "c++"
+    }
+  },
+  {
+    "type": "Intent",
+    "skill": "sentiment",
+    "weight": -1,
+    "likelihood": -1,
+    "location": {
+      "start": 0,
+      "end": 2
+    },
+    "intent": null,
+    "state": "neutral",
+    "sentenceType": "statement"
+  }
+]
+human: java c cpp
+ai: Thanks for being patient and answering all questions, we will get back to you within 7 days. Bye for now!

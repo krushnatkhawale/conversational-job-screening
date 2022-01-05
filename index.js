@@ -18,6 +18,20 @@ async function main()
     console.log(args.log);
   });
 
+  app.deploymentOptions = {axios: true};
+  app.setExternal("addToSkills", (args)=> {
+    
+    console.log("Skill is ", args.skillsArray);
+    var skills = [];
+    for(let i in args.skillsArray){
+      skills.push( args.skillsArray[i].value );
+    }
+    return skills;
+  });  
+  app.setExternal("postProfile", (args)=> {
+    //TODO: implement your external function here
+    console.log("Profile is ", args.profile);
+  });
   await app.start();
 
   const conv = app.createConversation({ phone: process.argv[2] ?? "", name: process.argv[3] ?? "" });

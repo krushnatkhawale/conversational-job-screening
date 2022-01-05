@@ -1,9 +1,7 @@
 {
   "version": "v2",
-  "intents": 
-  {
-    "yes": 
-    {
+  "intents": {
+    "yes": {
       "includes": [
         "yes",
         "correct",
@@ -15,7 +13,7 @@
         "you got it",
         "I would",
         "yeah",
-        "that's right", 
+        "that's right",
         "I would"
       ],
       "excludes": [
@@ -38,7 +36,6 @@
         "no, I want it delivered"
       ]
     },
-
     "bye": {
       "includes": [
         "bye",
@@ -53,55 +50,263 @@
       ]
     }
   },
- 
-  "entities": 
-  {
-    "rating": 
-    {
-      "open_set": false,
+  "entities": {
+    "experience": {
+      "open_set": true,
       "values": [
         {
           "value": "1",
-          "synonyms": ["1", "one", "zero", "horrible", "worst ever", "the worst", "awful", "horrid", "despicable", "detestable", "very bad"]
+          "synonyms": [
+            "1",
+            "one",
+            "an year"
+          ]
         },
         {
           "value": "2",
-          "synonyms": ["2", "two", "bad", "quite bad", "pretty bad", "not good", "crappy"]
+          "synonyms": [
+            "2",
+            "two"
+          ]
         },
         {
           "value": "3",
-          "synonyms": ["3", "three", "alright", "okay", "just okay"]
+          "synonyms": [
+            "3",
+            "three"
+          ]
         },
         {
-          "value": "4",
-          "synonyms": ["4", "four", "good", "pretty good", "quite good", "good enough"]
+          "value": "10",
+          "synonyms": [
+            "10",
+            "a decade"
+          ]
         },
         {
-          "value": "5",
-          "synonyms": ["5", "five", "amazing", "incrdible", "just grand", "perfct", "wondrful", "very good"]
+          "value": "14",
+          "synonyms": [
+            "14",
+            "one four",
+            "fourteen"
+          ]
+        },
+        {
+          "value": "20",
+          "synonyms": [
+            "20",
+            "two decades"
+          ]
         }
       ],
       "includes": [
-        "I would say it was (1)[rating]",
-        "I would say it was (2)[rating]",
-        "I would say it was (3)[rating]",
-        "I would say it was (4)[rating]",
-        "I would say it was (5)[rating]",
-        "(1)[rating]",
-        "(2)[rating]",
-        "(3)[rating]",
-        "(4)[rating]",
-        "(5)[rating]",
-        "I had an (1)[rating] experience",
-        "I had an (2)[rating] experience",
-        "I had an (3)[rating] experience",
-        "I had an (4)[rating] experience",
-        "I had an (5)[rating] experience",
-        "I'll give you a (1)[rating]",
-        "I'll give you a (2)[rating]",
-        "I'll give you a (3)[rating]",
-        "I'll give you a (4)[rating]",
-        "I'll give you a (5)[rating]"
+        "My total experience is (1)[experience]",
+        "My total experience is (2)[experience] years",
+        "My total experience is (3)[experience] years",
+        "My total experience is (10)[experience] years",
+        "My total experience is (14)[experience] years",
+        "My total experience is (20)[experience] years",
+        "It's (1)[experience]",
+        "It's (2)[experience]",
+        "It's (3)[experience]",
+        "It's (10)[experience]",
+        "It's (14)[experience]",
+        "It's (20)[experience]",
+        "I have (1)[experience] of experience",
+        "I have (2)[experience] of experience",
+        "I have (3)[experience] of experience",
+        "I have (10)[experience] of experience",
+        "I have (14)[experience] of experience",
+        "I have (20)[experience] of experience",
+        "(1)[experience]",
+        "(2)[experience]",
+        "(3)[experience]",
+        "(10)[experience]",
+        "(14)[experience]",
+        "(20)[experience]"
+      ]
+    },
+    "designation": {
+      "open_set": false,
+      "values": [
+        {
+          "value": "software developer",
+          "synonyms": [
+            "Developer",
+            "software developer",
+            "programmer",
+            "software engineer"
+          ]
+        },
+        {
+          "value": "senior software developer",
+          "synonyms": [
+            "Senior Developer",
+            "senior software developer",
+            "senior programmer",
+            "senior software engineer"
+          ]
+        },
+        {
+          "value": "fullstack developer",
+          "synonyms": [
+            "Full stack",
+            "fullstack",
+            "full stack software developer"
+          ]
+        },
+        {
+          "value": "database developer",
+          "synonyms": [
+            "Database Developer",
+            "db engineer",
+            "backend engineer",
+            "dbms admin"
+          ]
+        },
+        {
+          "value": "advocate",
+          "synonyms": [
+            "Advocate",
+            "senior advocate"
+          ]
+        }
+      ],
+      "includes": [
+        "I am looking for (1)[designation] role",
+        "I am looking for (2)[designation] role",
+        "I am looking for (3)[designation] role",
+        "I am looking for (4)[designation] role",
+        "I am looking for (5)[designation] role",
+        "(1)[designation]",
+        "(2)[designation]",
+        "(3)[designation]",
+        "(4)[designation]",
+        "(5)[designation]",
+        "I want to apply for (1)[designation]",
+        "I want to apply for (2)[designation]",
+        "I want to apply for (3)[designation]",
+        "I want to apply for (4)[designation]",
+        "I want to apply for (5)[designation]",
+        "I want to apply for (1)[designation] role",
+        "I want to apply for (2)[designation] role",
+        "I want to apply for (3)[designation] role",
+        "I want to apply for (4)[designation] role",
+        "I want to apply for (5)[designation] role"
+      ]
+    },
+    "employment_type": {
+      "open_set": false,
+      "values": [
+        {
+          "value": "full time",
+          "synonyms": [
+            "Fulltime",
+            "Full time",
+            "Full time work"
+          ]
+        },
+        {
+          "value": "part time",
+          "synonyms": [
+            "parttime",
+            "part time",
+            "part time work"
+          ]
+        },
+        {
+          "value": "contract",
+          "synonyms": [
+            "contract",
+            "contractual"
+          ]
+        }
+      ],
+      "includes": [
+        "I am looking for (full time)[employment_type] work",
+        "I am looking for (part time)[employment_type] work",
+        "I am looking for (contract)[employment_type] work",
+        "(full time)[employment_type]",
+        "(part time)[employment_type]",
+        "(contract)[employment_type]",
+        "I want to apply for (full time)[employment_type]",
+        "I want to apply for (part time)[employment_type]",
+        "I want to apply for (contract)[employment_type]",
+        "I am looking for (full time)[employment_type] job",
+        "I am looking for (part time)[employment_type] job",
+        "I am looking for (contract)[employment_type] job"
+      ]
+    },
+    "key_skills": {
+      "open_set": false,
+      "values": [
+        {
+          "value": "c",
+          "synonyms": [
+            "c",
+            "c programming language"
+          ]
+        },
+        {
+          "value": "c++",
+          "synonyms": [
+            "c plus plus",
+            "c + +",
+            "cpp",
+            "c++"
+          ]
+        },
+        {
+          "value": "java",
+          "synonyms": [
+            "java programming language",
+            "java",
+            "java11",
+            "java 8"
+          ]
+        },
+        {
+          "value": "functional programming",
+          "synonyms": [
+            "functional programming",
+            "fp"
+          ]
+        },
+        {
+          "value": "nextjs",
+          "synonyms": [
+            "nextjs"
+          ]
+        },
+        {
+          "value": "react",
+          "synonyms": [
+            "reactjs", "react-native", "react javascript"
+          ]
+        },
+        {
+          "value": "angular",
+          "synonyms": [
+            "angularjs", "angular10", "angular 12"
+          ]
+        }
+      ],
+      "includes": [
+        "I have worked on (c)[key_skills] for quite a sometime",
+        "I have worked on (c++)[key_skills] for quite a sometime",
+        "I have worked on (React)[key_skills] for quite a sometime",
+        "I have worked on (angular 12)[key_skills] for quite a sometime",
+        "(c)[key_skills]",
+        "(java)[key_skills]",
+        "(nextjs)[key_skills]",
+        "(angular)[key_skills]",
+        "(c)[key_skills], (java)[key_skills], (nextjs)[key_skills] and (angular)[key_skills]",
+        "My primary skills are (c)[key_skills], (java)[key_skills], (nextjs)[key_skills] and (angular)[key_skills]",
+        "My primary skills are (cpp)[key_skills], (java)[key_skills], (nextjs)[key_skills] and (angular)[key_skills]",
+        "I like (cpp)[key_skills], (java)[key_skills] and (nextjs)[key_skills] but I prefer working on (react)[key_skills], (java)[key_skills], (angular)[key_skills]",
+        "I like (cpp)[key_skills], (java)[key_skills] and (nextjs)[key_skills] but I prefer working on (react)[key_skills], (java)[key_skills], (angular)[key_skills]",
+        "I am looking for (cpp)[key_skills], (java)[key_skills] and (nextjs)[key_skills] technologies",
+        "I am looking for (cpp)[key_skills], (java)[key_skills] and (kotlin)[key_skills] skills"
       ]
     }
   }

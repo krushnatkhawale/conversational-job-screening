@@ -1,81 +1,201 @@
 {
-  "default": 
-  {
+  "default": {
     "voiceInfo": {
       "lang": "en-US",
       "speaker": "default",
       "speed": 1
     },
-
-    "phrases": 
-    {
-      "greeting": 
-      {
-        "first":
-      [
-        { "text": "Hi there " },
-        { "id": "name", "type": "dynamic" },
-        { "text": "! Can you hear me? " }
+    "phrases": {
+      "greeting": {
+        "first": [
+          {
+            "text": "Hi there "
+          },
+          {
+            "id": "name",
+            "type": "dynamic"
+          },
+          {
+            "text": "! I am Dasha from Capgemini pvt ltd. We are currently hiring people for various profiles and I am looking forward for knowing about you, are you okay for some questions? "
+          }
+        ],
+        "repeat": [
+          {
+            "text": "I was just saying, can you hear me "
+          },
+          {
+            "id": "name",
+            "type": "dynamic"
+          }
+        ]
+      },
+      "question_1": {
+        "first": [
+          {
+            "text": "Perfect, thank you. First question - What is the role are you looking for?"
+          }
+        ],
+        "repeat": [
+          {
+            "text": "I was just saying, What is the role are you looking for?"
+          }
+        ]
+      },
+      "question_2": {
+        "first": [
+          {
+            "text": "Perfect. Second question - How much experience do you have?"
+          }
+        ],
+        "repeat": [
+          {
+            "text": "I was just saying, How much experience do you have?"
+          }
+        ]
+      },
+      "question_3": {
+        "first": [
+          {
+            "text": "Okay. Third question is, What type of employment are you looking for? Examples are, full time, part time"
+          }
+        ],
+        "repeat": [
+          {
+            "text": "I was just saying, What type of employment are you looking for? Examples are, full time, part time?"
+          }
+        ]
+      },
+      "question_4": {
+        "first": [
+          {
+            "text": "I see. Next question is, What are your key skills?"
+          }
+        ],
+        "repeat": [
+          {
+            "text": "I was just saying, What are your key skills?"
+          }
+        ]
+      },
+      "close_questionnaire": {
+        "first": [
+          {
+            "text": "Thanks for being patient and answering all questions, we will get back to you within 7 days. Bye for now!"
+          }
+        ]
+      },
+      "yes": {
+        "first": [
+          {
+            "text": "Great! And I can hear you too. Bye!"
+          }
+        ]
+      },
+      "callback": {
+        "first": [
+          {
+            "text": "Great! I will call you back. Bye!"
+          }
+        ]
+      },
+      "no": {
+        "first": [
+          {
+            "text": "You will excuse me if I find that highly unlikely. After all, you responded to me and I can hear you just fine. Peace out!"
+          }
+        ]
+      },
+      "i_will_call_back": [
+        {
+          "text": "Okay, I'll call you later. Bye!"
+        }
       ],
-      "repeat":
-      [
-        {"text": "I was just saying, can you hear me " },
-        {"id": "name", "type": "dynamic" }
-        ]
-    },
-
-      "yes": 
-      {
-        "first": 
-        [{ "text": "Great! And I can hear you too. Bye!" }]
-      },
-
-      "no": 
-      {
-        "first": 
-        [{ "text": "You will excuse me if I find that highly unlikely. After all, you responded to me and I can hear you just fine. Peace out!" }]
-      },
-
-
-      "i_will_call_back": 
-      [{ "text": "Okay, I'll call you later. Bye!" }],
-      "hello": 
-      {
+      "hello": {
         "random": [
-          [{ "text": "Hello" }],
-          [{ "text": "Umm, hello?" }],
-          [{ "text": "Are you there?" }]
+          [
+            {
+              "text": "Hello"
+            }
+          ],
+          [
+            {
+              "text": "Umm, hello?"
+            }
+          ],
+          [
+            {
+              "text": "Are you there?"
+            }
+          ]
         ]
       },
-
-      "when_callback": [{ "text": "When can I call you back?" }],
-      "i_will_wait": 
-      {
+      "when_callback": [
+        {
+          "text": "When can I call you back?"
+        }
+      ],
+      "thanks_for_the_response": [
+        {
+          "text": "Thanks for the response"
+        }
+      ],
+      "i_will_wait": {
         "random": [
-          [{ "text": "Okay, I'll wait" }],
-          [{ "text": "Sure, I'll wait" }],
-          [{ "text": "Okay, no problem!" }]
+          [
+            {
+              "text": "Okay, I'll wait"
+            }
+          ],
+          [
+            {
+              "text": "Sure, I'll wait"
+            }
+          ],
+          [
+            {
+              "text": "Okay, no problem!"
+            }
+          ]
         ]
       },
-
-      "i_can_hear_you": [{ "text": "Yes, I hear you" }],
+      "i_can_hear_you": [
+        {
+          "text": "Yes, I hear you"
+        }
+      ],
       "dont_understand": {
         "random": [
-          [{ "text": "Sorry, could you say it again?" }],
+          [
+            {
+              "text": "Sorry, could you say it again?"
+            }
+          ],
           [
             {
               "text": "Sorry, the connection dropped for a second. Could you say that again?"
             }
           ],
-          [{ "text": "Sorry, I didn't quite catch that." }],
-          [{ "text": "Could you say it one more time?" }]
+          [
+            {
+              "text": "Sorry, I didn't quite catch that."
+            }
+          ],
+          [
+            {
+              "text": "Could you say it one more time?"
+            }
+          ]
         ]
       },
       "dont_understand_request": [
-        { "text": "Sorry, i cant do it now. May be some day." }
+        {
+          "text": "Sorry, i cant do it now. May be some day."
+        }
       ],
       "dont_understand_question": [
-        { "text": "Sorry, i dont understand your question. Can you say it otherwise?" }
+        {
+          "text": "Sorry, i dont understand your question. Can you say it otherwise?"
+        }
       ],
       "dont_understand_hangup": [
         {
@@ -87,21 +207,37 @@
           "text": "I'm sorry, let me transfer you to another agent. Please stand by!"
         }
       ],
-      "mhm": [{ "text": "Mgm..." }],
+      "mhm": [
+        {
+          "text": "Mgm..."
+        }
+      ],
       "yes_i_am_a_robot": [
         {
           "text": "Actually I am an advanced AI. Just don't tell my boss or I'll be out of a job."
         }
       ],
-      "is_that_all": [{ "text": "Is that all?" }],
-      "repeat_question": [{ "text": "Can you repeat the question, please?" }]
+      "is_that_all": [
+        {
+          "text": "Is that all?"
+        }
+      ],
+      "repeat_question": [
+        {
+          "text": "Can you repeat the question, please?"
+        }
+      ]
     },
-    
     "types": {},
-    "macros": 
-    {
+    "macros": {
       "greeting": {},
+      "question_1": {},
+      "question_2": {},
+      "question_3": {},
+      "question_4": {},
+      "close_questionnaire": {},
       "yes": {},
+      "callback": {},
       "no": {},
       "i_will_call_back": {},
       "see_you_soon": {},
@@ -123,7 +259,8 @@
       "will_help": {},
       "how_much": {},
       "confirm_food_order": {},
-      "repeat_question": {}
+      "repeat_question": {},
+      "thanks_for_the_response": {}
     }
   }
 }
