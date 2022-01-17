@@ -97,6 +97,14 @@
             "20",
             "two decades"
           ]
+        },
+        {
+          "value": "0",
+          "synonyms": [
+            "0",
+            "no experience",
+            "fresher"
+          ]
         }
       ],
       "includes": [
@@ -123,7 +131,13 @@
         "(3)[experience]",
         "(10)[experience]",
         "(14)[experience]",
-        "(20)[experience]"
+        "(20)[experience]",
+        "(1)[experience] year",
+        "(2)[experience] years",
+        "(3)[experience] years",
+        "(10)[experience] years",
+        "(14)[experience] years",
+        "(20)[experience] years"
       ]
     },
     "designation": {
